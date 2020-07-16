@@ -6,6 +6,9 @@
 //   reverse('there') === 'ereht'
 //   reverse('apple') === 'leppa'
 //   reverse('Greetings!') === '!sgniteerG'
+// --- SPECIAL INSTRUCTIONS
+// Do NOT use array reverse method helper
+// Do NOT use 3rd party packages
 
 function reverse(str) {};
 
