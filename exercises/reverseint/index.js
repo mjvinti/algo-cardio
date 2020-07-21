@@ -1,6 +1,6 @@
 // --- Directions
 // Given an integer, return an integer that is the reverse
-// order of the numbers provided.
+// order of the number provided.
 // --- Examples
 //   reverseInt(17) === 71
 //   reverseInt(981) === 189
