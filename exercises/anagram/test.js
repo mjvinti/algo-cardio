@@ -12,6 +12,10 @@ test('"Whoa! Hi!" is an anagram of "Hi! Whoa!"', () => {
 	expect(anagram('Whoa! Hi!', 'Hi! Whoa!')).toBeTruthy();
 });
 
+test('"Whoa! Hi!" is an anagram of "Hi! Whoa!!"', () => {
+	expect(anagram('Whoa! Hi!', 'Hi! Whoa!!')).toBeTruthy();
+});
+
 test('"One One" is not an anagram of "Two two two"', () => {
 	expect(anagram('One One', 'Two two two')).toBeFalsy();
 });
