@@ -15,6 +15,38 @@
  * @param  {Array[Number]} array The array with all numbers in a pair but one
  * @return {Number}	The number that is not repeated
  */
+
 function singleNumber(array) {};
+
+// mario's solution #1
+// function singleNumber(array) {
+//     if (array.length === 1) {
+//         return array[0];
+//     }
+
+//     let numMap = array.reduce((numMap, num) => {
+//         numMap[num] = numMap[num] + 1 || 1;
+//         return numMap;
+//     }, {});
+
+//     for (const num in numMap) {
+//         if (numMap[num] === 1) {
+//             return parseInt(num);
+//         }
+//     }
+// };
+
+// andrew's solution
+// function singleNumber(array) {
+//     let nums = {};
+//     array.forEach((i) => {
+//         if (!nums[i]) {
+//             nums[i] = 0;
+//         }
+//         nums[i]++;
+//     });
+//     return Number(Object.keys(nums).find(key => nums[key] === 1));
+// };
+
 
 module.exports = singleNumber;

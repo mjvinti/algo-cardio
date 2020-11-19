@@ -26,4 +26,41 @@ function twoSum(nums, target) {};
 //     }
 // }
 
+// aaron's solution
+// function twoSum(nums, target) {
+// 	const seenChars = new Map();
+// 	for(let i = 0; i < nums.length; i++) {
+// 		const num = nums[i];
+// 		if(seenChars.has(num)) {
+// 			return [seenChars.get(num), i]
+// 		}
+// 		seenChars.set(target - num, i);
+// 	}
+// };
+
+// andrew's solution
+// function twoSum(nums, target) {
+//     for (let i = 0, len = nums.length; i < len; i++) {
+//         for (let j = i + 1; j < len; j++) {
+//             if ((nums[i] + nums[j]) === target) {
+//                 return [i, j];
+//             }
+//         }
+//     }
+// };
+
+// eric's solution
+// function twoSum(nums, target) {
+//     let result = [];
+//     nums.forEach((num, i) => {
+//         for (let j = 0, len = nums.length; j < len; j++) {
+//             if (num + nums[j] === target) {
+//                 result = [j, i];
+//                 break;
+//             }
+//         }
+//     });
+//     return result;
+// };
+
 module.exports = twoSum;
